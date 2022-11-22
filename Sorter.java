@@ -15,10 +15,12 @@ public class Sorter {
         }
     }
 
+    // returns the unsorted array
     public int[] getUnsorted() {
         return unsorted;
     }
 
+    // returns the sorted array
     public int[] getSorted() {
         if (sorted.equals(unsorted)) {
             System.out.println("NOTICE: sorted array may not be sorted yet.");
@@ -32,11 +34,4 @@ public class Sorter {
         Arrays.sort(sorted);
     }
 
-    // performs sort with runtime recording
-    public void performSort() {
-        long startTime = System.nanoTime();
-        sort();
-        long endTime = System.nanoTime();
-        System.out.println("Sort completed in " + (endTime - startTime) + " nanoseconds.");
-    }
 }
