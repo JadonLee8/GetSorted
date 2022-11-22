@@ -1,5 +1,6 @@
 public class Main{
     public static void main(String[] args){
-        System.out.println("Nothing in main.");
+        Sorter base = new Sorter(DataCreator.CreateRandomIntArr(100000, 0, 100000));
+        base.performSort();
     }
 }

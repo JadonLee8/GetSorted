@@ -5,8 +5,14 @@ public class Sorter {
     private int[] sorted;
 
     public Sorter(int[] unsorted) {
-        this.unsorted = unsorted;
-        this.sorted = unsorted;
+        this.unsorted = new int[unsorted.length];
+        for (int i = 0; i < unsorted.length; i++) {
+            this.unsorted[i] = unsorted[i];
+        }
+        this.sorted = new int[unsorted.length];
+        for (int i = 0; i < unsorted.length; i++) {
+            this.sorted[i] = unsorted[i];
+        }
     }
 
     public int[] getUnsorted() {
@@ -14,7 +20,7 @@ public class Sorter {
     }
 
     public int[] getSorted() {
-        if (sorted == unsorted) {
+        if (sorted.equals(unsorted)) {
             System.out.println("NOTICE: sorted array may not be sorted yet.");
         }
         return sorted;
