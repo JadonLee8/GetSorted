@@ -20,4 +20,9 @@ public class Tester {
         System.out.println(" nanoseconds");
         return (endTime - startTime);
     }
+
+    // TODO: implement method
+    public boolean compareSorts(Sorter sorter1, Sorter sorter2) {
+        return false;
+    }
 }

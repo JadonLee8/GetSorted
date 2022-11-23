@@ -28,6 +28,18 @@ public class Sorter {
         return sorted;
     }
 
+    public void setSorted(int[] sorted) {
+        for (int i = 0; i < sorted.length; i++) {
+            this.sorted[i] = sorted[i];
+        }
+    }
+
+    public void setUnsorted(int[] unsorted) {
+        for (int i = 0; i < unsorted.length; i++) {
+            this.unsorted[i] = unsorted[i];
+        }
+    }
+
     // performs sort without runtime recording
     public void sort() {
         System.out.println("Performing Java built-in quicksort...");
